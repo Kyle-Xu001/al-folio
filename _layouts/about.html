@@ -32,7 +32,7 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
-
+        
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}
@@ -41,6 +41,9 @@ layout: default
             <!-- Selected papers -->
             {%- include selected_papers.html %}
           {%- endif %}
+
+          {%- include selected_projects.html %}
+
           {%- if page.social %}
           <!-- Social -->
           <div class="social">

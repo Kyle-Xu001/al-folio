@@ -24,15 +24,16 @@ a, table.table a {
 }
 
 figure, img {
-  max-width: 90vw;
+  max-width: 50vw;
 }
 
 blockquote {
-  background: var(--global-bg-color);
+  background: rgba(241, 255, 242, 0.40);
   border-left: 2px solid var(--global-theme-color);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  margin: 10px 14em 10px 0;
+  padding: 5px 35px;
   font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 // Math
@@ -63,8 +64,8 @@ blockquote {
   width: 100%;
 
   .address {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     font-family: monospace;
     p {
       display: inline-block;
@@ -100,14 +101,16 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: rgba(218, 253, 218, 0.97);
   opacity: 0.95;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   a:not(.active) {
-    color: var(--global-text-color);
+    color: var(--global-text-color-light);
   }
   a:hover {
     color: var(--global-hover-color);
@@ -130,10 +133,10 @@ blockquote {
     }
   }
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-text-color-light);
   }
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-text-color-light);
     &:hover {
       color: var(--global-hover-color);
     }
@@ -149,7 +152,8 @@ blockquote {
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 0.7rem;
+
     a {
       i::before {
         color: var(--global-text-color);
@@ -201,7 +205,6 @@ blockquote {
 
 
 // News
-
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
