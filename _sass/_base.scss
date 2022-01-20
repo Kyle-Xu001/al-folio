@@ -100,17 +100,16 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: rgba(218, 253, 218, 0.97);
+  border-bottom: 1.5px solid var(--global-divider-color);
+  background-color: rgba(183, 241, 205, 0.753);
   opacity: 0.95;
-  font-weight: bold;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   a:not(.active) {
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
   }
   a:hover {
     color: var(--global-hover-color);
@@ -133,10 +132,10 @@ blockquote {
     }
   }
   .navbar-brand {
-    color: var(--global-text-color-light);
+    color: rgba(0, 0, 0, 0.8);
   }
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color-light);
+    color: rgba(0, 0, 0, 0.8);
     &:hover {
       color: var(--global-hover-color);
     }

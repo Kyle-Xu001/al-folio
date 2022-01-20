@@ -27,22 +27,13 @@
 
               <!-- About -->
               <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}"><i style="font-size:24px" class="fa">&#xf1b2</i>About
+                <a class="nav-link" href="{{ '/' | relative_url }}"><i style="font-size:16px" class="fa">	&#xf19c;</i>&nbsp;Home
                   {%- if page.title == "about" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
               </li>
               {% if site.blog_name %}
-              <!-- Blog -->
-              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="#pro">⚓Blog
-                  {%- if page.title == "blog" -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
-              </li>
-              {%- endif %}
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "title" -%}
@@ -77,6 +68,16 @@
               {%- endif -%}
               {% endfor -%}
               {%- if site.enable_darkmode %}
+
+              <!-- Blog -->
+              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="#pro"><i style="font-size:16px" class="fa">	&#xf02d;</i>&nbsp;Blog
+                  {%- if page.title == "blog" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+              {%- endif %}
 
               <!-- Toogle theme mode -->
               <div class = "toggle-container">
