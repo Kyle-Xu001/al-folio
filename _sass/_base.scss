@@ -3,6 +3,10 @@
  ******************************************************************************/
 
 // Typography
+.btn-toolbar .btn {
+  margin-left: 25px;
+  font-weight: 600;
+}
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
@@ -171,7 +175,7 @@ blockquote {
   .icon-bar {
     display: block;
     width: 22px;
-    height: 2px;
+    height: 1.5px;
     background-color: var(--global-text-color);
     border-radius: 1px;
     margin-bottom: 4px;
